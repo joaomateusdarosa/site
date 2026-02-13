@@ -3,167 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Mateus Da Rosa | Liderança Estratégica de Receita (CRO/CSO)</title>
+    <title>João Mateus Da Rosa | CRO & CSO | Estrategista de Receita B2B</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonte Plus Jakarta Sans: Referência em Design Tech -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .bg-tech-dark { background-color: #0A0A0B; }
-        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.07); backdrop-filter: blur(12px); }
-        
-        /* Nova Cor de Entrega: Indigo Elétrico (Substituindo o Dourado) */
-        .btn-indigo { background: #4F46E5; color: #FFFFFF; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-indigo:hover { background: #4338CA; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4); }
-        
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        .hero-image-container {
-            position: relative;
-            border-radius: 2.5rem;
-            overflow: hidden;
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; }
+        .text-gradient { 
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+        .indigo-gradient { 
+            background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+        }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.02); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(20px); 
+        }
+        .hero-image {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            border-radius: 3rem;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body class="bg-tech-dark text-slate-200 selection:bg-indigo-500 selection:text-white">
+<body class="text-slate-300 selection:bg-indigo-500 selection:text-white">
 
-    <!-- Navegação -->
-    <nav class="fixed w-full z-50 bg-tech-dark/80 backdrop-blur-xl border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="w-8 h-8 bg-indigo-600 text-white font-black flex items-center justify-center rounded-md shadow-lg shadow-indigo-500/20">J</div>
-                <span class="font-bold tracking-tight text-white uppercase text-xs">João Mateus</span>
-            </div>
-            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-                <a href="#resultados" class="hover:text-indigo-400 transition">Resultados</a>
-                <a href="#metodologia" class="hover:text-indigo-400 transition">Metodologia</a>
+    <!-- Navegação Minimalista -->
+    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-white font-extrabold tracking-tighter text-xl">J<span class="text-indigo-500">M</span>R</div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em]">
+                <a href="#resultados" class="hover:text-indigo-400 transition">Impacto</a>
+                <a href="#experiencia" class="hover:text-indigo-400 transition">Experiência</a>
+                <a href="#entregas" class="hover:text-indigo-400 transition">Entregas</a>
                 <a href="#depoimentos" class="hover:text-indigo-400 transition">Depoimentos</a>
             </div>
-            <a href="https://wa.me/5548999004726" class="text-[10px] font-bold border border-indigo-500/30 px-6 py-2 rounded-full hover:bg-indigo-600 hover:text-white transition uppercase tracking-widest text-indigo-400">Fale com João</a>
+            <a href="https://wa.me/5548999004726" class="indigo-gradient text-white text-[10px] font-bold px-6 py-2 rounded-full uppercase tracking-widest shadow-lg shadow-indigo-500/20">Consultoria</a>
         </div>
     </nav>
 
-    <!-- Seção Principal (Hero) -->
-    <section class="relative pt-48 pb-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-12 gap-16 items-center">
-            
-            <div class="md:col-span-7" data-aos="fade-up">
-                <div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full mb-8">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                    </span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-indigo-400">Disponível para Consultoria e Projetos</span>
-                </div>
-                <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-[1.05] tracking-tighter mb-8">
-                    Especialista em <br><span class="opacity-30 italic">Máquinas de Vendas Previsíveis.</span>
+    <!-- Hero: O Arquiteto de Receita -->
+    <section class="relative pt-40 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-8" data-aos="fade-up">
+                <h1 class="text-6xl md:text-9xl font-extrabold text-white leading-none tracking-tighter mb-8">
+                    Revenue <br> <span class="text-gradient italic">Engineering.</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-slate-400 mb-12 max-w-xl leading-relaxed font-light">
-                    Transformando operações B2B SaaS em máquinas de crescimento previsível através de <span class="text-white font-medium">Estratégia</span> e Dados.
+                <p class="text-xl md:text-3xl font-light text-slate-400 max-w-2xl leading-relaxed mb-12">
+                    Liderança estratégica para <span class="text-white font-semibold italic underline decoration-indigo-500 underline-offset-8">B2B SaaS</span>. Estruturação de máquinas de vendas previsíveis com foco em escala e EBITDA.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="https://wa.me/5548999004726" class="btn-indigo px-10 py-5 rounded-full font-bold text-center text-sm uppercase tracking-wider shadow-lg">Agendar Diagnóstico</a>
-                    <a href="https://www.linkedin.com/in/joaomateusdarosa" target="_blank" class="border border-white/10 hover:bg-white/5 px-10 py-5 rounded-full font-bold text-center text-sm transition uppercase tracking-wider">LinkedIn</a>
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex flex-col">
+                        <span class="text-white font-bold text-2xl">14+ Anos</span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Experiência B2B</span>
+                    </div>
+                    <div class="w-px h-12 bg-white/10 hidden sm:block"></div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-bold text-2xl">R$ 50M+</span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Vendas Acumuladas</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="md:col-span-5" data-aos="fade-left">
-                <div class="hero-image-container group">
-                    <img src="Lingopass-128.jpg" alt="João Mateus Da Rosa" class="w-full grayscale hover:grayscale-0 transition duration-1000 ease-in-out scale-105 hover:scale-100 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-tech-dark/80 via-transparent to-transparent"></div>
-                </div>
+            <div class="md:col-span-4" data-aos="fade-left">
+                <img src="Lingopass-128.jpg" alt="João Mateus Da Rosa" class="hero-image grayscale hover:grayscale-0 transition duration-1000 border border-white/10 shadow-2xl">
             </div>
-
         </div>
     </section>
 
-    <!-- Métricas e Empresas -->
-    <section id="resultados" class="py-32 border-y border-white/5">
+    <!-- Impacto em Números (Dashboard Style) -->
+    <section id="resultados" class="py-24 border-y border-white/5 bg-white/[0.01]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500 mb-20 text-center opacity-50 italic">Resultados Auditados em Operações Reais</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Exact Sales -->
-                <a href="https://www.exactsales.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up">
-                    <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Exact Sales</div>
-                    <div class="text-5xl font-bold text-white mb-3">R$ 50M+</div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Vendas acumuladas e suporte estratégico ao aporte Série A.</p>
-                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
-                </a>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-card p-10 rounded-[2rem]" data-aos="zoom-in">
+                    <span class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest mb-4 block">Gloss Express</span>
+                    <h3 class="text-5xl font-bold text-white mb-2">+132%</h3>
+                    <p class="text-slate-500 text-sm">Crescimento de faturamento em 9 meses sob gestão de Revenue integrada.</p>
+                </div>
+                <div class="glass-card p-10 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="100">
+                    <span class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest mb-4 block">Prevision</span>
+                    <h3 class="text-5xl font-bold text-white mb-2">+77%</h3>
+                    <p class="text-slate-500 text-sm">Aumento de NMRR em um trimestre através de novos playbooks de cadência.</p>
+                </div>
+                <div class="glass-card p-10 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest mb-4 block">Exact Sales</span>
+                    <h3 class="text-5xl font-bold text-white mb-2">2.5x</h3>
+                    <p class="text-slate-500 text-sm">Otimização do Ticket Médio e estruturação para rodada Série A.</p>
+                </div>
+                <div class="glass-card p-10 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="300">
+                    <span class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest mb-4 block">DNA Vital</span>
+                    <h3 class="text-5xl font-bold text-white mb-2">+21%</h3>
+                    <p class="text-slate-500 text-sm">Crescimento anual médio sustentado em ecossistema de 8 unidades de negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência C-Level -->
+    <section id="experiencia" class="py-32">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-white mb-20 text-center tracking-tighter">Trajetória Estratégica</h2>
+            <div class="space-y-24">
+                <!-- DNA Vital -->
+                <div class="grid md:grid-cols-3 gap-10 items-start" data-aos="fade-up">
+                    <div class="sticky top-32">
+                        <span class="text-indigo-500 font-black text-xs uppercase tracking-[0.3em]">2024 — Atual</span>
+                        <h3 class="text-2xl font-bold text-white mt-4">DNA Vital Group</h3>
+                        <p class="text-slate-500 text-sm uppercase font-bold mt-1">Chief Revenue Officer (CRO)</p>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <p class="text-slate-300 text-lg leading-relaxed italic">"Liderança da estratégia de crescimento integrando Marketing, Vendas e CS em 8 unidades de negócio."</p>
+                        <ul class="space-y-4 text-sm text-slate-400">
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Cocriação de novos produtos e diversificação de canais de receita.</li>
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Definição de ICPs específicos por unidade, elevando a previsibilidade do funil.</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- Gloss Express -->
-                <a href="https://glossexpress.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Gloss Express</div>
-                    <div class="text-5xl font-bold text-white mb-3">+132%</div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Crescimento de faturamento e escala em apenas 9 meses.</p>
-                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
-                </a>
+                <div class="grid md:grid-cols-3 gap-10 items-start" data-aos="fade-up">
+                    <div class="sticky top-32">
+                        <span class="text-indigo-500 font-black text-xs uppercase tracking-[0.3em]">2023 — 2024</span>
+                        <h3 class="text-2xl font-bold text-white mt-4">Gloss Express</h3>
+                        <p class="text-slate-500 text-sm uppercase font-bold mt-1">Chief Revenue Officer (CRO)</p>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <p class="text-slate-300 text-lg leading-relaxed italic">"Responsável pela escala de uma Beauty Tech através de processos de RevOps."</p>
+                        <ul class="space-y-4 text-sm text-slate-400">
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Crescimento médio de +15% mês a mês e redução de turnover.</li>
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Estruturação de Upsell no Atendimento, elevando a taxa de recompra.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <!-- Prevision -->
-                <a href="https://prevision.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Prevision</div>
-                    <div class="text-5xl font-bold text-white mb-3">+77%</div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Aumento de NMRR em um único trimestre operacional.</p>
-                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
-                </a>
-
-                <!-- DNA Vital -->
-                <a href="https://dnavital.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">DNA Vital Group</div>
-                    <div class="text-5xl font-bold text-white mb-3">+21%</div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Crescimento anual médio sustentado em 8 unidades.</p>
-                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
-                </a>
+                <!-- Exact Sales -->
+                <div class="grid md:grid-cols-3 gap-10 items-start" data-aos="fade-up">
+                    <div class="sticky top-32">
+                        <span class="text-indigo-500 font-black text-xs uppercase tracking-[0.3em]">2018 — 2022</span>
+                        <h3 class="text-2xl font-bold text-white mt-4">Exact Sales</h3>
+                        <p class="text-slate-500 text-sm uppercase font-bold mt-1">Gerente de Vendas</p>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <p class="text-slate-300 text-lg leading-relaxed italic">"Gestão comercial na referência em prospecção e qualificação B2B do Brasil."</p>
+                        <ul class="space-y-4 text-sm text-slate-400">
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Estruturação de SLAs entre Marketing, Pré-vendas e Vendas.</li>
+                            <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span> Liderança direta na conquista do aporte Série A através de tração comprovada.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section id="depoimentos" class="py-32 bg-white/[0.01]" x-data="{ 
+    <!-- Pilares de Entrega (Services/Deliverables) -->
+    <section id="entregas" class="py-32 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-white mb-6 tracking-tight">Arquitetura Operacional</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Como atuo em operações de crescimento ou reestruturação comercial.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 border border-white/5 rounded-3xl hover:bg-white/5 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-8 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Engenharia de GTM</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Revisão de Personas, ICP, posicionamento e jornada de prospecção consultiva para novas receitas.</p>
+                </div>
+                <div class="p-10 border border-white/5 rounded-3xl hover:bg-white/5 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-8 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Liderança & Accountability</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Desenvolvimento de lideranças intermediárias, rituais de 1:1, PDI e matriz de avaliação de alta performance.</p>
+                </div>
+                <div class="p-10 border border-white/5 rounded-3xl hover:bg-white/5 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-8 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">RevOps & Inteligência</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Auditoria de processos, rituais de forecast, ritos de pipeline e remuneração variável estratégica (Compensation Plan).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos (Seção Clean) -->
+    <section id="depoimentos" class="py-32" x-data="{ 
         testimonials: [
             { name: 'Lucas Mantovani', role: 'Co-fundador Safie', text: 'A mentoria do João foi fundamental... nos trouxe insights preciosos para melhorar nossos resultados.' },
-            { name: 'Daniel Castilho', role: 'Head de Vendas Vertown', text: 'Ele nos explicou como foi a estruturação do funil... abriu nossa visão em relação à importância de acompanhar as métricas.' },
-            { name: 'Heyde Leão', role: 'Founder AEID Tecnologia', text: 'As recomendações e orientações de João foram de suma importância para a aprovação de um projeto de pesquisa junto ao SENAI.' },
-            { name: 'Roberta Erthal', role: 'Coordenadora Comercial', text: 'Devo meu crescimento diretamente ao seu apoio e orientação constantes. Seu legado marcou profundamente minha carreira.' },
-            { name: 'Bruna Liborio', role: 'Food Engineer | CS Leader', text: 'É inspiradora a forma como você lidera João! É muito estratégico, pragmático, empático e humano.' },
-            { name: 'Manuella Schmitt', role: 'Líder de Crescimento de Receita', text: 'Teu olhar sobre eficiência de processos e empatia com as pessoas fizeram de ti mais do que um gestor.' },
-            { name: 'Alan Scheidt', role: 'Gerente de Aquisição Prevision', text: 'Ele me ajudou muito a ser um líder melhor e ajudou o time de PV a ser um time inconformado.' },
-            { name: 'Marco Mendoza', role: 'Gerente de Vendas Exact', text: 'Tive a honra de estar lado a lado com o Jota gestor. Posso dizer com 100% de certeza: trabalhamos com dados.' },
-            { name: 'Thiago R. Costa', role: 'Especialista Comercial', text: 'Sou grato a tua gestão, aos feedbacks, as dicas e tudo mais. Minha vida mudou depois que me descobri na área comercial.' }
+            { name: 'Daniel Castilho', role: 'Head de Vendas Vertown', text: 'Abriu nossa visão em relação à importância de acompanhar as métricas e identificar quais mais impactam.' },
+            { name: 'Bruna Liborio', role: 'Líder de CS', text: 'É inspiradora a forma como você lidera João! É muito estratégico, pragmático e humano.' },
+            { name: 'Marco Mendoza', role: 'Gerente Exact Sales', text: 'Posso dizer com 100% de certeza: trabalhamos com dados. Os ensinamentos me moldaram para quem sou hoje.' }
         ] 
     }">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-end mb-16">
-                <div class="max-w-xl">
-                    <h2 class="text-4xl font-bold text-white mb-6 tracking-tight italic">Depoimentos.</h2>
-                    <p class="text-slate-400 text-lg font-light">O que fundadores, CEOs e lideranças comerciais relatam sobre a metodologia aplicada.</p>
-                </div>
-                <div class="hidden md:flex space-x-3">
-                    <button @click="$refs.carousel.scrollBy({left: -450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-indigo-600 hover:text-white transition">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    </button>
-                    <button @click="$refs.carousel.scrollBy({left: 450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-indigo-600 hover:text-white transition">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </button>
-                </div>
-            </div>
-
-            <div x-ref="carousel" class="flex overflow-x-auto gap-8 no-scrollbar pb-12">
-                <template x-for="t in testimonials" :key="t.name">
-                    <div class="min-w-[380px] md:min-w-[480px] glass-card p-12 rounded-[3rem] flex flex-col hover:border-indigo-500/30 transition">
-                        <p class="text-slate-300 text-lg leading-relaxed mb-12 font-light" x-text="'“' + t.text + '”'"></p>
-                        <div class="mt-auto flex items-center gap-5 pt-8 border-t border-white/5">
-                            <div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center font-bold text-xs text-indigo-400" x-text="t.name.charAt(0)"></div>
+            <h2 class="text-sm font-black text-indigo-500 uppercase tracking-[0.5em] mb-12 text-center">Depoimentos</h2>
+            <div class="flex overflow-x-auto gap-8 no-scrollbar pb-10">
+                <template x-for="t in testimonials">
+                    <div class="min-w-[400px] glass-card p-12 rounded-[3rem] border border-white/5">
+                        <p class="text-white text-xl font-light leading-relaxed mb-10 italic" x-text="'“' + t.text + '”'"></p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center font-bold text-xs" x-text="t.name.charAt(0)"></div>
                             <div>
-                                <div class="font-bold text-white text-sm" x-text="t.name"></div>
-                                <div class="text-[9px] text-slate-500 uppercase tracking-widest font-black mt-1" x-text="t.role"></div>
+                                <div class="text-white font-bold text-sm" x-text="t.name"></div>
+                                <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest" x-text="t.role"></div>
                             </div>
                         </div>
                     </div>
@@ -172,24 +221,24 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="py-32 border-t border-white/5 bg-tech-dark">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-24">
+    <!-- Footer de Conversão -->
+    <footer class="py-32 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20">
             <div>
-                <h2 class="text-5xl font-bold text-white mb-8 tracking-tighter">Vamos construir o próximo <span class="text-indigo-500">marco.</span></h2>
-                <div class="space-y-6">
-                    <a href="mailto:joaomateusdarosa@gmail.com" class="block text-2xl font-light hover:text-indigo-400 transition decoration-indigo-500/20 underline underline-offset-8">joaomateusdarosa@gmail.com</a>
-                    <a href="tel:5548999004726" class="block text-xl text-slate-500 hover:text-white transition tracking-tight">(48) 99900-4726</a>
+                <h2 class="text-5xl font-bold text-white mb-10 tracking-tighter">Pronto para <br> <span class="text-gradient">escalar?</span></h2>
+                <div class="space-y-4">
+                    <a href="mailto:joaomateusdarosa@gmail.com" class="block text-2xl hover:text-indigo-400 transition underline underline-offset-8 decoration-white/10">joaomateusdarosa@gmail.com</a>
+                    <a href="tel:5548999004726" class="block text-xl text-slate-500">(48) 99900-4726</a>
                 </div>
             </div>
-            <div class="flex flex-col justify-between items-start md:items-end">
-                <div class="flex space-x-12">
-                    <a href="https://www.linkedin.com/in/joaomateusdarosa" target="_blank" class="text-xs font-bold border-b border-indigo-500/20 pb-2 hover:border-indigo-500 transition uppercase tracking-widest">Perfil LinkedIn</a>
-                    <a href="https://wa.me/5548999004726" class="text-xs font-bold border-b border-indigo-500/20 pb-2 hover:border-indigo-500 transition uppercase tracking-widest">WhatsApp</a>
+            <div class="flex flex-col justify-between md:items-end">
+                <div class="flex gap-8">
+                    <a href="https://www.linkedin.com/in/joaomateusdarosa" class="text-xs font-bold uppercase tracking-widest border-b border-white/10 pb-2 hover:border-indigo-500 transition">LinkedIn</a>
+                    <a href="https://wa.me/5548999004726" class="text-xs font-bold uppercase tracking-widest border-b border-white/10 pb-2 hover:border-indigo-500 transition">WhatsApp</a>
                 </div>
-                <div class="mt-16 md:mt-0 text-right">
-                    <p class="text-[10px] text-slate-600 font-bold tracking-[0.3em] uppercase mb-2">João Mateus Da Rosa</p>
-                    <p class="text-[10px] text-slate-700 italic">"Venda insights, não apenas produtos."</p>
+                <div class="text-right mt-20 md:mt-0">
+                    <p class="text-[10px] font-bold text-slate-700 tracking-[0.4em] uppercase">Florianópolis — SC</p>
+                    <p class="text-[10px] text-slate-800 italic mt-2">"Venda insights, não apenas produtos."</p>
                 </div>
             </div>
         </div>
@@ -200,4 +249,3 @@
     </script>
 </body>
 </html>
-
