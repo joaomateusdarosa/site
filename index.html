@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Mateus Da Rosa | CRO & CSO Strategic Leader</title>
+    <title>João Mateus Da Rosa | Liderança Estratégica de Receita (CRO/CSO)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Plus Jakarta Sans: Referência em Design Tech -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,143 +14,142 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .bg-tech-dark { background-color: #0A0A0B; }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
-        .btn-premium { background: #FFFFFF; color: #000000; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,255,255,0.1); }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.07); backdrop-filter: blur(12px); }
+        
+        /* Nova Cor de Entrega: Indigo Elétrico (Substituindo o Dourado) */
+        .btn-indigo { background: #4F46E5; color: #FFFFFF; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-indigo:hover { background: #4338CA; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4); }
+        
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
-        /* Ajuste para a foto executiva */
         .hero-image-container {
             position: relative;
-            border-radius: 2rem;
+            border-radius: 2.5rem;
             overflow: hidden;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
-<body class="bg-tech-dark text-slate-200 selection:bg-white selection:text-black">
+<body class="bg-tech-dark text-slate-200 selection:bg-indigo-500 selection:text-white">
 
-    <!-- Nav -->
+    <!-- Navegação -->
     <nav class="fixed w-full z-50 bg-tech-dark/80 backdrop-blur-xl border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-white text-black font-black flex items-center justify-center rounded-md">J</div>
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-indigo-600 text-white font-black flex items-center justify-center rounded-md shadow-lg shadow-indigo-500/20">J</div>
                 <span class="font-bold tracking-tight text-white uppercase text-xs">João Mateus</span>
             </div>
             <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-                <a href="#resultados" class="hover:text-white transition">Impacto</a>
-                <a href="#metodologia" class="hover:text-white transition">Método</a>
-                <a href="#depoimentos" class="hover:text-white transition">Social Proof</a>
+                <a href="#resultados" class="hover:text-indigo-400 transition">Resultados</a>
+                <a href="#metodologia" class="hover:text-indigo-400 transition">Metodologia</a>
+                <a href="#depoimentos" class="hover:text-indigo-400 transition">Depoimentos</a>
             </div>
-            <a href="https://wa.me/5548999004726" class="text-[10px] font-bold border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition uppercase tracking-widest">Contato</a>
+            <a href="https://wa.me/5548999004726" class="text-[10px] font-bold border border-indigo-500/30 px-6 py-2 rounded-full hover:bg-indigo-600 hover:text-white transition uppercase tracking-widest text-indigo-400">Fale com João</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Seção Principal (Hero) -->
     <section class="relative pt-48 pb-32 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-12 gap-16 items-center">
             
-            <!-- Conteúdo Esquerda -->
             <div class="md:col-span-7" data-aos="fade-up">
-                <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-8">
+                <div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full mb-8">
                     <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                     </span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase opacity-70">Disponível para Projetos Estratégicos</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-indigo-400">Disponível para Consultoria e Projetos</span>
                 </div>
                 <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-[1.05] tracking-tighter mb-8">
-                    Revenue <br><span class="opacity-30 italic">Architect.</span>
+                    Arquiteto de <br><span class="opacity-30 italic">Receita.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-slate-400 mb-12 max-w-xl leading-relaxed font-light">
-                    Transformando operações B2B SaaS em máquinas de crescimento previsível através de <span class="text-white font-medium">Data-Driven Strategy</span> e RevOps.
+                    Transformando operações B2B SaaS em máquinas de crescimento previsível através de <span class="text-white font-medium">Estratégia de Dados</span> e RevOps.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="https://wa.me/5548999004726" class="btn-premium px-10 py-5 rounded-full font-bold text-center text-sm uppercase tracking-wider">Agendar Diagnóstico</a>
+                    <a href="https://wa.me/5548999004726" class="btn-indigo px-10 py-5 rounded-full font-bold text-center text-sm uppercase tracking-wider shadow-lg">Agendar Diagnóstico</a>
                     <a href="https://www.linkedin.com/in/joaomateusdarosa" target="_blank" class="border border-white/10 hover:bg-white/5 px-10 py-5 rounded-full font-bold text-center text-sm transition uppercase tracking-wider">LinkedIn</a>
                 </div>
             </div>
 
-            <!-- Foto Direita -->
             <div class="md:col-span-5" data-aos="fade-left">
                 <div class="hero-image-container group">
-                    <!-- CHAMADA DA SUA FOTO -->
-                    <img src="Lingopass-128.jpg" alt="João Mateus Da Rosa" class="w-full grayscale group-hover:grayscale-0 transition duration-1000 ease-in-out scale-105 group-hover:scale-100 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-tech-dark via-transparent to-transparent opacity-60"></div>
+                    <img src="Lingopass-128.jpg" alt="João Mateus Da Rosa" class="w-full grayscale hover:grayscale-0 transition duration-1000 ease-in-out scale-105 hover:scale-100 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-tech-dark/80 via-transparent to-transparent"></div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Key Metrics (Empresas e Números) -->
+    <!-- Métricas e Empresas -->
     <section id="resultados" class="py-32 border-y border-white/5">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500 mb-20 text-center italic text-opacity-50 italic">Resultados Auditados em Operações Reais</h2>
+            <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500 mb-20 text-center opacity-50 italic">Resultados Auditados em Operações Reais</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Exact Sales -->
-                <a href="https://www.exactsales.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:bg-white/5 transition block" data-aos="fade-up">
+                <a href="https://www.exactsales.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up">
                     <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Exact Sales</div>
                     <div class="text-5xl font-bold text-white mb-3">R$ 50M+</div>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8">Vendas acumuladas e suporte estratégico ao aporte Série A.</p>
-                    <span class="text-[9px] font-bold text-white opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
+                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
                 </a>
 
                 <!-- Gloss Express -->
-                <a href="https://glossexpress.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:bg-white/5 transition block" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://glossexpress.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Gloss Express</div>
                     <div class="text-5xl font-bold text-white mb-3">+132%</div>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8">Crescimento de faturamento e escala em apenas 9 meses.</p>
-                    <span class="text-[9px] font-bold text-white opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
+                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
                 </a>
 
                 <!-- Prevision -->
-                <a href="https://prevision.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:bg-white/5 transition block" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://prevision.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">Prevision</div>
                     <div class="text-5xl font-bold text-white mb-3">+77%</div>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8">Aumento de NMRR em um único trimestre operacional.</p>
-                    <span class="text-[9px] font-bold text-white opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
+                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
                 </a>
 
                 <!-- DNA Vital -->
-                <a href="https://dnavital.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:bg-white/5 transition block" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://dnavital.com.br" target="_blank" class="glass-card p-10 rounded-3xl group hover:border-indigo-500/50 transition block" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-[10px] font-extrabold text-slate-500 mb-6 tracking-widest uppercase">DNA Vital Group</div>
                     <div class="text-5xl font-bold text-white mb-3">+21%</div>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8">Crescimento anual médio sustentado em 8 unidades.</p>
-                    <span class="text-[9px] font-bold text-white opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
+                    <span class="text-[9px] font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition tracking-[0.2em]">VISITAR SITE →</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Depoimentos Material CROaaS -->
-    <section id="depoimentos" class="py-32 bg-white/[0.02]" x-data="{ 
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-32 bg-white/[0.01]" x-data="{ 
         testimonials: [
             { name: 'Lucas Mantovani', role: 'Co-fundador Safie', text: 'A mentoria do João foi fundamental... nos trouxe insights preciosos para melhorar nossos resultados.' },
             { name: 'Daniel Castilho', role: 'Head de Vendas Vertown', text: 'Ele nos explicou como foi a estruturação do funil... abriu nossa visão em relação à importância de acompanhar as métricas.' },
             { name: 'Heyde Leão', role: 'Founder AEID Tecnologia', text: 'As recomendações e orientações de João foram de suma importância para a aprovação de um projeto de pesquisa junto ao SENAI.' },
             { name: 'Roberta Erthal', role: 'Coordenadora Comercial', text: 'Devo meu crescimento diretamente ao seu apoio e orientação constantes. Seu legado marcou profundamente minha carreira.' },
             { name: 'Bruna Liborio', role: 'Food Engineer | CS Leader', text: 'É inspiradora a forma como você lidera João! É muito estratégico, pragmático, empático e humano.' },
-            { name: 'Manuella Schmitt', role: 'Revenue Growth Leader', text: 'Teu olhar sobre eficiência de processos e empatia com as pessoas fizeram de ti mais do que um gestor.' },
+            { name: 'Manuella Schmitt', role: 'Líder de Crescimento de Receita', text: 'Teu olhar sobre eficiência de processos e empatia com as pessoas fizeram de ti mais do que um gestor.' },
             { name: 'Alan Scheidt', role: 'Gerente de Aquisição Prevision', text: 'Ele me ajudou muito a ser um líder melhor e ajudou o time de PV a ser um time inconformado.' },
             { name: 'Marco Mendoza', role: 'Gerente de Vendas Exact', text: 'Tive a honra de estar lado a lado com o Jota gestor. Posso dizer com 100% de certeza: trabalhamos com dados.' },
-            { name: 'Thiago R. Costa', role: 'Especialista Comercial', text: 'Sou grato a tua gestão, aos feedbacks, as dicas e tudo mais. Minha vida mudou depois que me descobri na área comercial.' },
-            { name: 'Daniel Santos', role: 'Business Development Manager', text: 'Você é uma lenda. Contribuiu e contribui muito para minha evolução profissional.' }
+            { name: 'Thiago R. Costa', role: 'Especialista Comercial', text: 'Sou grato a tua gestão, aos feedbacks, as dicas e tudo mais. Minha vida mudou depois que me descobri na área comercial.' }
         ] 
     }">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-end mb-16">
                 <div class="max-w-xl">
-                    <h2 class="text-4xl font-bold text-white mb-6 tracking-tight italic">Social Proof.</h2>
+                    <h2 class="text-4xl font-bold text-white mb-6 tracking-tight italic">Depoimentos.</h2>
                     <p class="text-slate-400 text-lg font-light">O que fundadores, CEOs e lideranças comerciais relatam sobre a metodologia aplicada.</p>
                 </div>
                 <div class="hidden md:flex space-x-3">
-                    <button @click="$refs.carousel.scrollBy({left: -450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-white hover:text-black transition">
+                    <button @click="$refs.carousel.scrollBy({left: -450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-indigo-600 hover:text-white transition">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button @click="$refs.carousel.scrollBy({left: 450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-white hover:text-black transition">
+                    <button @click="$refs.carousel.scrollBy({left: 450, behavior: 'smooth'})" class="p-4 border border-white/10 rounded-full hover:bg-indigo-600 hover:text-white transition">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                 </div>
@@ -157,10 +157,10 @@
 
             <div x-ref="carousel" class="flex overflow-x-auto gap-8 no-scrollbar pb-12">
                 <template x-for="t in testimonials" :key="t.name">
-                    <div class="min-w-[380px] md:min-w-[480px] glass-card p-12 rounded-[3rem] flex flex-col">
+                    <div class="min-w-[380px] md:min-w-[480px] glass-card p-12 rounded-[3rem] flex flex-col hover:border-indigo-500/30 transition">
                         <p class="text-slate-300 text-lg leading-relaxed mb-12 font-light" x-text="'“' + t.text + '”'"></p>
                         <div class="mt-auto flex items-center gap-5 pt-8 border-t border-white/5">
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center font-bold text-xs text-white" x-text="t.name.charAt(0)"></div>
+                            <div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center font-bold text-xs text-indigo-400" x-text="t.name.charAt(0)"></div>
                             <div>
                                 <div class="font-bold text-white text-sm" x-text="t.name"></div>
                                 <div class="text-[9px] text-slate-500 uppercase tracking-widest font-black mt-1" x-text="t.role"></div>
@@ -172,24 +172,24 @@
         </div>
     </section>
 
-    <!-- Footer Final -->
+    <!-- Rodapé -->
     <footer class="py-32 border-t border-white/5 bg-tech-dark">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-24">
             <div>
-                <h2 class="text-5xl font-bold text-white mb-8 tracking-tighter">Let's build the next <span class="opacity-30">milestone.</span></h2>
+                <h2 class="text-5xl font-bold text-white mb-8 tracking-tighter">Vamos construir o próximo <span class="text-indigo-500">marco.</span></h2>
                 <div class="space-y-6">
-                    <a href="mailto:joaomateusdarosa@gmail.com" class="block text-2xl font-light hover:text-white transition decoration-white/20 underline underline-offset-8">joaomateusdarosa@gmail.com</a>
+                    <a href="mailto:joaomateusdarosa@gmail.com" class="block text-2xl font-light hover:text-indigo-400 transition decoration-indigo-500/20 underline underline-offset-8">joaomateusdarosa@gmail.com</a>
                     <a href="tel:5548999004726" class="block text-xl text-slate-500 hover:text-white transition tracking-tight">(48) 99900-4726</a>
                 </div>
             </div>
             <div class="flex flex-col justify-between items-start md:items-end">
                 <div class="flex space-x-12">
-                    <a href="https://www.linkedin.com/in/joaomateusdarosa" target="_blank" class="text-xs font-bold border-b border-white/20 pb-2 hover:border-white transition uppercase tracking-widest">LinkedIn Profile</a>
-                    <a href="https://wa.me/5548999004726" class="text-xs font-bold border-b border-white/20 pb-2 hover:border-white transition uppercase tracking-widest">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/joaomateusdarosa" target="_blank" class="text-xs font-bold border-b border-indigo-500/20 pb-2 hover:border-indigo-500 transition uppercase tracking-widest">Perfil LinkedIn</a>
+                    <a href="https://wa.me/5548999004726" class="text-xs font-bold border-b border-indigo-500/20 pb-2 hover:border-indigo-500 transition uppercase tracking-widest">WhatsApp</a>
                 </div>
                 <div class="mt-16 md:mt-0 text-right">
                     <p class="text-[10px] text-slate-600 font-bold tracking-[0.3em] uppercase mb-2">João Mateus Da Rosa</p>
-                    <p class="text-[10px] text-slate-700 italic">"Sell insights, not products."</p>
+                    <p class="text-[10px] text-slate-700 italic">"Venda insights, não apenas produtos."</p>
                 </div>
             </div>
         </div>
